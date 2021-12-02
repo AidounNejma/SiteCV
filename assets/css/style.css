@@ -453,6 +453,25 @@ main .section {
     font-weight: bold;
 }
 
+/* Footer */
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footerLeft, .footerRight{
+    display: flex;
+    flex-direction: column;
+    padding: 2% 3% ;
+    width: 50%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 /* Responsive */
 
