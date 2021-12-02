@@ -1,0 +1,97 @@
+/* Général */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,900&display=swap');
+
+* { /* "*" Permet de prendre tout du fichier html, on met ensuite les valeurs à 0 pour que tout colle (qu'il n'y est pas d'espace blanc sur les cotés) */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Merriweather;
+}
+
+/* Création de variables de couleurs pour toujours garder les mêmes sans se tromper */
+:root{
+    --main-white: #fff;
+    --main-black: #000;
+    --main-grey: #cccccc;
+    --main-gold: #c99049;
+}    
+
+a{
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+/* Fin Général */
+
+/* Header */
+header{
+    background-image: url("../img/header.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* nav */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.navLinksLeft{
+    width: 35%;
+}
+
+.navLinksLeft a{
+    padding: 4% 5%;
+}
+
+.navLinksRight a, .navLinksRight a{
+    padding: 4% 5%;
+}
+
+nav a:hover{
+    background-color: var(--main-white);
+    color: var(--main-black);
+    transition: 1s;
+}
+
+.imageNav{
+    width: 13%;
+    position: absolute;
+    top: 0;
+    left: 30%;
+}
+
+.navLinksRight{
+    width: 50%;
+}
+
+.line {
+    background-color: #80808065;
+    width: 90%;
+    margin: auto;
+    height: 1px;
+}
+/* Fin nav */
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20% 13% 14% 0;
+}
+
+.headerLeft{
+    display: flex;
+    flex-direction: column;
+}
+
+.headerLeft h1{
+    color: var(--main-white);
+}
+
+.line2{
+    background-color: var(--main-gold);
+    width: 90%;
+    margin: auto;
+    height: 1px;
+}
