@@ -454,6 +454,12 @@ main .section {
 }
 
 /* Footer */
+
+footer{
+    background-color: var(--main-black);
+    color: var(--main-white);
+}
+
 .footer{
     display: flex;
     justify-content: center;
