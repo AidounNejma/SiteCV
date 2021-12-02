@@ -77,12 +77,13 @@ nav a:hover{
 .header{
     display: flex;
     justify-content: space-evenly;
-    padding: 20% 13% 14% 0;
+    padding: 5% 14% 0 0;
 }
 
 .headerLeft{
     display: flex;
     flex-direction: column;
+    padding: 12% 0 25% 0;
 }
 
 .headerLeft h1{
@@ -94,4 +95,53 @@ nav a:hover{
     width: 90%;
     margin: auto;
     height: 1px;
+}
+
+.headerRight{
+    padding: 23% 0 11% 0;
+}
+/* Fin Header */
+
+/* Main */
+#about{
+    display: flex;
+    flex-direction: column;
+    margin: 0 6%;
+}
+
+#about h1{
+    padding: 5% 0 2% 0;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.lineMain{
+    background-color: var(--main-gold);
+    width: 8%;
+    margin: 0 auto 2% auto;
+    height: 3px;
+}
+
+.aboutBlocks{
+    display: flex;
+    width: 100%;
+    margin: 2% auto;
+}
+
+.aboutLeft{
+    width: 50%;
+    padding: 0 2% 0 0;
+}
+
+.aboutLeft p{
+    padding-bottom: 2%;
+    line-height: 1.8rem;
+}
+
+.aboutRight{
+    width: 50%
+}
+
+.aboutRight img{
+    width: 100%;
 }
