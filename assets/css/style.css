@@ -12,7 +12,7 @@
 :root{
     --main-white: #fff;
     --main-black: #000;
-    --main-grey: #cccccc;
+    --main-grey: #ebebeb;
     --main-gold: #c99049;
 }    
 
@@ -103,16 +103,18 @@ nav a:hover{
 /* Fin Header */
 
 /* Main */
-#about{
-    display: flex;
-    flex-direction: column;
-    margin: 0 6%;
-}
 
-#about h1{
+.title{ /* pour tous les titres des blocs */
     padding: 5% 0 2% 0;
     margin: auto;
     text-transform: uppercase;
+    text-align: center;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    margin: 0 6%;
 }
 
 .lineMain{
@@ -122,6 +124,7 @@ nav a:hover{
     height: 3px;
 }
 
+/* Section 1 */
 .aboutBlocks{
     display: flex;
     width: 100%;
@@ -144,4 +147,42 @@ nav a:hover{
 
 .aboutRight img{
     width: 100%;
+}
+
+/* FIN Section 1 */
+
+/* Section 2 */
+#portfolio {
+    margin: 3% auto;
+    padding: 0 10%;
+    background-color: var(--main-grey);
+}
+
+/* carrousel */
+.carrousel{
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.carrousel img{
+    width: 100%;
+}
+
+#back, #forward{
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    top: 56%;
+    padding: 17px;
+    color: grey;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+    opacity: 1;
+}
+
+#forward{
+    right: 0;
 }
