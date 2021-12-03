@@ -63,7 +63,7 @@ function slideNext(){
 /* Utilisation de l'API instersection Observer pour détecter quand un bloc est 
     visible à l'écran (voir tuto grafikart) */
 
-    const ratio = .1
+    const ratio = .2
     const options = {
         root: null,
         rootMargin: '0px',
@@ -79,7 +79,7 @@ function slideNext(){
         })
     }
     const observer = new IntersectionObserver(handleIntersect, options);
-    document.querySelectorAll('.reveal').forEach(function (r){ /* boucle pour prendre plusieurs éléments dans l'animation */
+    document.querySelectorAll('[class*="reveal-"]').forEach(function (r){ /* boucle pour prendre plusieurs éléments dans l'animation */
         observer.observe(r)
     })
     
