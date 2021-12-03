@@ -22,6 +22,37 @@ a {
     color: var(--main-white);
 }
 
+/* Animations */
+/* Animation blocs */
+.reveal{
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1.4s cubic-bezier(.5, 0, 0, 1);
+}
+/* Animation carrousel */
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    } 
+/* Fin Animations */
+
 /* Fin Général */
 
 /* Header */
@@ -78,7 +109,7 @@ nav a:hover {
 .header {
     display: flex;
     justify-content: space-evenly;
-    padding: 5% 14% 0 0;
+    padding: 3% 10% 0 0;
 }
 
 .headerLeft {
@@ -292,9 +323,11 @@ main .section {
 
 .timeline li:nth-child(odd):before {
     top: -40px;
+    color: var(--main-gold);
 }
 .timeline li:nth-child(even):before {
     bottom: -40px;
+    color: var(--main-gold);
 }
 
 .timeline li:after {
@@ -341,7 +374,8 @@ main .section {
 .timeline2 {
     position: relative;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 5% auto;
+
 }
 
   /* The actual timeline (the vertical ruler) */
@@ -429,6 +463,10 @@ main .section {
     border-radius: 6px;
 }
 
+.content h2{
+    color: var(--main-gold);
+}
+
 /* Section 5 */
 .inlineIcons{
     display: flex;
@@ -436,16 +474,18 @@ main .section {
     justify-content: space-between;
     text-align: center;
     margin: 5%;
+    padding-bottom: 3%;
 }
 
 .icons{
     display: flex;
     flex-direction: column;
+    align-self: center;
 }
 
 .icons i{
     font-size: 40px;
-    padding-bottom: 2%;
+    padding-bottom: 10%;
     color: var(--main-gold);
 }
 
@@ -470,11 +510,43 @@ footer{
     flex-direction: column;
     padding: 2% 3% ;
     width: 50%;
+    text-align: center;
+    line-height: 3rem;
+}
+
+#phone{
+    font-size: 1.2rem;
+}
+
+.iconsFooter{
+    display: inline-block;
+}
+
+.iconsFooter i{
+    padding: 0 2%;
+    font-size: 1.6rem;
+}
+
+.iconsFooter i:hover{
+    color: var(--main-gold);
+    transition: 1s;
 }
 
 form{
     display: flex;
     flex-direction: column;
+}
+
+form input, form textarea{
+    padding: 2%;
+    margin: 0 3% 3% 3%;
+    border-radius: 4px;
+}
+
+form button{
+    margin: 0 25% 3% 25%;
+    padding: 2% 0;
+    border-radius: 10px;
 }
 
 
