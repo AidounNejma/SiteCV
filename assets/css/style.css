@@ -75,6 +75,45 @@ a {
     0% {opacity: 0;}
     100% {opacity: 1;}
     } 
+
+    /* Animation Menu */
+.slideInRight {
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    }
+
+    @keyframes slideInRight {
+    0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    } 
+
+    .slideOutRight{
+        animation-name: slideOutRight;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        }
+
+        @keyframes slideOutRight {
+        0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        }
+        100% {
+        visibility: hidden;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        }
+        } 
+/* Fin Animation Menu */
+
 /* Fin Animations */
 
 /* Fin Général */
@@ -93,6 +132,12 @@ nav {
     padding: 2%;
 }
 
+nav a:hover {
+    background-color: var(--main-white);
+    color: var(--main-black);
+    transition: 1s;
+}
+
 .navLinksLeft {
     width: 50%;
 }
@@ -103,12 +148,6 @@ nav {
 
 .navLinksRight a, .navLinksRight a {
     padding: 4% 5%;
-}
-
-nav a:hover {
-    background-color: var(--main-white);
-    color: var(--main-black);
-    transition: 1s;
 }
 
 .imageNav {
@@ -124,6 +163,65 @@ nav a:hover {
 
 .mobile{
     display: none; /* menu burger mis en display none = n'apparait pas dans le dom, à faire réapparaitre au changement de l'écran */
+    cursor: pointer;
+}
+
+.sideMenu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 35%;
+    height: -webkit-fill-available;
+    top: 0;
+    border-radius: 7px 0 0 7px;
+    padding: 0 3% 2% 3%;
+    background-color: var(--main-black);
+    z-index: 1;
+}
+
+.sideMenu a{
+    color: var(--main-white);
+    padding: 4% 0;
+}
+
+.sideMenu a:hover{
+    background-color: none !important;
+}
+
+.sideMenuHeading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6%;
+}
+
+.closeButton{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.signatureH{
+    width: 35%
+}
+
+.lineSideMenu{
+    width: 95%;
+    height: 1px;
+    margin: 22px auto 26px auto;
+    background-color: var(--main-gold);
+}
+
+.sideMenuLinks{
+    display: flex;
+    flex-direction: column;
+    padding: 0 8% 35% 8%;
+    font-weight: 300;
+}
+
+.sideMenuLinks a:hover{
+    text-decoration: underline;
 }
 
 .line {
@@ -634,6 +732,11 @@ form button:hover{
         color: var(--main-white);
         font-size: 18px;
     }
+
+    .sideMenu{
+        width: 50%;
+    }
+
     /* Place la timeline sur la gauche */
     .timeline2::after {
         left: 31px;
@@ -673,7 +776,7 @@ form button:hover{
     }
     
     main .section {
-        margin: 18% 6%;
+        margin: 6%;
     }
 
     .timeline {
@@ -727,6 +830,10 @@ form button:hover{
     position: absolute;
     top: 0;
     left: 33%;
+}
+
+.sideMenu{
+    width: 100%;
 }
 
 .header {
