@@ -338,7 +338,7 @@ main .section {
 }
 
 .text{
-    background-color: #0000006b;
+    background-color: #c990499e;
     color: var(--main-white);
     font-weight: bold;
     padding: 2% 0;
@@ -358,13 +358,17 @@ main .section {
     width: auto;
     top: 50%;
     padding: 17px;
-    color: grey;
+    color:  #c9904994;
     font-weight: bold;
     font-size: 50px;
     transition: 0.4s ease;
     border-radius: 0 5px 5px 0;
     user-select: none;
     opacity: 1;
+}
+
+#back:hover, #forward:hover{
+    color: var(--main-gold);
 }
 
 #forward {
@@ -813,8 +817,16 @@ form button:hover{
         flex-direction: column;
     }
 
+    #back, #forward{
+        top: 42%;
+    }
+
     .aboutLeft, .aboutRight{
         width: 100%;
+    }
+
+    .text{
+        font-size: 18px;
     }
 
     .timeline {
@@ -876,7 +888,7 @@ form button:hover{
 }
 
 #back, #forward{
-    top: 12%;
+    top: 30%;
     padding: 10px;
     font-size: 35px;
 }
