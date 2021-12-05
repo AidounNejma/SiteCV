@@ -350,6 +350,7 @@ main .section {
     margin: auto;
     width: 35%;
     text-align: center;
+    cursor: default;
 }
 
 #back, #forward {
