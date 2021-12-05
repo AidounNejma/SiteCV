@@ -22,12 +22,16 @@ function slideBack(){
 
     if(numImage === 1){
         link.setAttribute('href', "https://github.com/AidounNejma"); /* A chaque numéro de slide je change l'attribut href de mon lien*/
+        text.innerHTML = "Projets Github"; /* A chaque numéro de slide je change le contenu de mon <p> */
     } else if(numImage === 2){
         link.setAttribute('href', "https://angular.nejma-aidoun.fr/");
+        text.innerHTML = "Site de Streaming (Angular)";
     } else if(numImage === 3){
         link.setAttribute('href', "https://aidounnejma.github.io/");
+        text.innerHTML = "Reproduction site Discord";
     } else if(numImage == 4){
         link.setAttribute('href', "https://github.com/AidounNejma/Shikeygami");
+        text.innerHTML = "Site d'Escape Game";
     }
     
     image.src = 'assets/img/' + numImage + '.jpeg';
@@ -44,12 +48,16 @@ function slideNext(){
             }
             if(numImage === 1){
                 link.setAttribute('href', "https://github.com/AidounNejma");
+                text.innerHTML = "Projets Github";
             } else if(numImage === 2){
                 link.setAttribute('href', "https://angular.nejma-aidoun.fr/");
+                text.innerHTML = "Site de Streaming (Angular)";
             } else if(numImage === 3){
                 link.setAttribute('href', "https://aidounnejma.github.io/");
+                text.innerHTML = "Reproduction site Discord";
             } else if(numImage == 4){
                 link.setAttribute('href', "https://github.com/AidounNejma/Shikeygami");
+                text.innerHTML = "Site d'Escape Game";
             }
             image.src = 'assets/img/' + numImage + '.jpeg';
             image.classList.toggle('fadeIn');
@@ -58,6 +66,7 @@ function slideNext(){
             }, 500);
 }
 
+/* -------------------------------------------------------------------------------------------------------------------------- */
 /* Animation des blocs  */
 
 /* Utilisation de l'API instersection Observer pour détecter quand un bloc est 
@@ -83,7 +92,9 @@ function slideNext(){
         observer.observe(r)
     })
     
-    /* Animation menu burger */
+    
+/* -------------------------------------------------------------------------------------------------------------------------- */
+/* Animation menu burger */
     var imageBurger = document.querySelector('.mobile');
 //console.log(imageBurger);
 

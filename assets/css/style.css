@@ -337,6 +337,21 @@ main .section {
     width: fit-content;
 }
 
+.text{
+    background-color: #0000006b;
+    color: var(--main-white);
+    font-weight: bold;
+    padding: 2% 0;
+    position: absolute;
+    bottom: 9%;
+    font-size: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 35%;
+    text-align: center;
+}
+
 #back, #forward {
     cursor: pointer;
     position: absolute;
@@ -860,7 +875,7 @@ form button:hover{
     width: 50%;
 }
 
-#back, #forwards{
+#back, #forward{
     top: 12%;
     padding: 10px;
     font-size: 35px;
@@ -870,7 +885,7 @@ form button:hover{
     right: 88%;
 }
 
-#forwards{
+#forward{
     left: 88%;
 }
 
