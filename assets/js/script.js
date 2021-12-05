@@ -103,7 +103,7 @@ var closeButton = document.querySelector('.closeButton');
 //console.log(closeButton);
 
 let sideLinks = document.querySelectorAll('.sideLinks');
-console.log(sideLinks);
+//console.log(sideLinks);
 
 imageBurger.addEventListener('click', openSideMenu);
 
@@ -118,9 +118,11 @@ function openSideMenu() {
 }
 
 closeButton.addEventListener('click', closeSideMenu);
-for(let i = 0; i < sideLinks.length; i++){
-    sideLinks[i].addEventListener('click', closeSideMenu);
+
+    for(let i = 0; i < sideLinks.length; i++){
+    sideLinks[i].addEventListener('click', closeSideMenu); /* boucle pour tous les liens du side menu */
 }
+
 function closeSideMenu(){
         if(sideMenu.style.display== 'flex'){
             sideMenu.classList.add('slideOutRight');
