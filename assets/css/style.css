@@ -859,9 +859,25 @@ form button:hover{
     background-color: var(--main-gold);
     width: 50%;
 }
+
+#back, #forwards{
+    top: 12%;
+    padding: 10px;
+    font-size: 35px;
+}
+
+#back{
+    right: 88%;
+}
+
+#forwards{
+    left: 88%;
+}
+
 .headerLeft h1, .headerLeft h2 {
     font-size: 12px;
 }
+
 .line {
     margin: 8% auto 0 auto;
 }
