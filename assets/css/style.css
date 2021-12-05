@@ -850,6 +850,20 @@ form button:hover{
     }
 }
 
+@media screen and (max-width: 736px) and (orientation: landscape) { /* A partir de l'iphone 6/7/8 orientation landscape */
+    .headerLeft{
+        padding: 11% 0 36% 0;
+    }
+
+    .text{
+        font-size: 20px;
+    }
+
+    #back, #forward{
+        top: 40%;
+    }
+}
+
 
 @media screen and (max-width: 414px) {
 .imageNav {
@@ -885,6 +899,11 @@ form button:hover{
 .lineMain {
     background-color: var(--main-gold);
     width: 50%;
+}
+
+.text{
+    font-size: 12px;
+    width: 40%;
 }
 
 #back, #forward{
