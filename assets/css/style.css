@@ -645,6 +645,63 @@ main .section {
     font-weight: bold;
 }
 
+/* Fin Section */
+
+/* Section 6 */
+
+#softSkills{
+    margin: 0;
+    padding: 5% 10% 15% 10%;
+    background-color: var(--main-grey);
+}
+
+.softP{
+    position: absolute;
+    background-color: var(--main-gold);
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.responsability{
+    top: 64%;
+    right: 10%;
+}
+
+.communication{
+    top: 38%;
+    left: 10%;
+}
+
+.management{
+    top: 30%;
+    left: 43%;
+}
+
+.teaching{
+    bottom: 10%;
+    left: 44%;
+}
+
+.friendly{
+    bottom: 16%;
+    left: 15%;
+}
+
+.curiosity{
+    top: 34%;
+    right: 18%;
+}
+
+.softImg{
+    margin: auto;
+    padding: 15% 0 0 0;
+    width: 16rem;
+}
+
+
+
+/* Fin Section */
+
 /* Footer */
 
 footer{
@@ -802,12 +859,25 @@ form button:hover{
     .timeline {
         width: 600px;
     }
+
+    .management {
+        top: 26%;
+        left: 42%;
+    }
+    .teaching {
+        bottom: 8%;
+        left: 43%;
+    }
 }
 
 
 @media screen and (max-width: 700px) {
     .timeline {
         width: 500px;
+    }
+    .responsability {
+        top: 70%;
+        right: 10%;
     }
 }
 
@@ -951,4 +1021,56 @@ main .section {
     font-size: 10px;
 }
 
+.softImg {
+    width: 6rem;
+}
+
+#softSkills{
+    padding: 5% 10% 35% 10%;
+}
+
+.softP{
+    font-size: 14px;
+}
+
+.friendly {
+    bottom: 30%;
+    left: 13%;
+}
+
+.communication {
+    top: 42%;
+    left: 2%;
+}
+
+
+.friendly {
+    bottom: 30%;
+    left: 13%;
+}
+
+.curiosity {
+    top: 39%;
+    right: 7%;
+}
+
+.teaching {
+    bottom: 22%;
+    left: 38%;
+}
+
+.responsability {
+    top: 59%;
+    right: 3%;
+}
+
+.management {
+    top: 29%;
+    left: 38%;
+}
+
+.management {
+    top: 29%;
+    left: 38%;
+}
 }
